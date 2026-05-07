@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# Features
 
-## Project info
+## Core Features
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+- **Product Catalog**: Browse organic gardening products including Panchgavya, Vermicompost, and Vermiwash
+- **Product Details**: View detailed information about each product including benefits, usage instructions, and pricing
+- **Hero Carousel**: Dynamic image carousel on the homepage showcasing featured content
+- **Responsive Design**: Mobile-first responsive layout that works across all devices
 
-## How can I edit this code?
+## Pages
 
-There are several ways of editing your application.
+- **Home**: Landing page with hero carousel and product grid
+- **About**: Company information, mission statement, team members, and story
+- **Contact**: Contact form with email, phone, and address information
+- **FAQs**: Frequently asked questions page
+- **Product Details**: Individual product pages with comprehensive information
+- **Login**: User authentication page
+- **Dashboard**: Protected user dashboard (requires authentication)
+- **Profile**: User profile management (requires authentication)
+- **404 Not Found**: Custom error page for invalid routes
 
-**Use Lovable**
+## Authentication & Security
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Firebase Authentication**: User login and registration system
+- **Protected Routes**: Dashboard and Profile pages require authentication
+- **Auth Routes**: Automatic redirect to dashboard if already logged in
+- **Logout Functionality**: Secure user logout
 
-Changes made via Lovable will be committed automatically to this repo.
+## UI Components
 
-**Use your preferred IDE**
+- **shadcn/ui Components**: Full suite of accessible UI components including:
+  - Accordion, Alert Dialog, Avatar, Badge, Breadcrumb
+  - Button, Calendar, Card, Carousel, Chart
+  - Checkbox, Dialog, Dropdown Menu, Form, Input
+  - Navigation Menu, Popover, Select, Tabs, Toast
+  - Tooltip, and many more
+- **Toast Notifications**: User feedback for form submissions and actions
+- **Framer Motion Animations**: Smooth page transitions and animations
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technical Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React 18**: Modern React with hooks and functional components
+- **TypeScript**: Full type safety throughout the application
+- **React Router**: Client-side routing with protected routes
+- **TanStack Query**: Data fetching and state management
+- **Tailwind CSS**: Utility-first CSS framework
+- **Vite**: Fast build tool and development server
+- **Vitest**: Unit testing framework
+- **ESLint**: Code linting and quality checks
+- **Supabase Integration**: Backend database support (configured)
 
-Follow these steps:
+## Product Management
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Product Data Structure**: Organized product information with images, descriptions, benefits, and usage
+- **Product Cards**: Reusable product card components with ratings and pricing
+- **Product Images**: High-quality product images stored in assets
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Layout & Navigation
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **Consistent Layout**: Shared layout component across all pages
+- **Navigation Bar**: Responsive navigation with active link highlighting
+- **Footer**: Site-wide footer component
+- **Mobile Navigation**: Mobile-friendly navigation menu
