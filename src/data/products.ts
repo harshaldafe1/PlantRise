@@ -1,0 +1,162 @@
+import panchgavya from "@/assets/panchgavya.jpg";
+import vermicompost from "@/assets/vermicompost.jpg";
+import vermiwash from "@/assets/vermiwash.jpg";
+
+export interface Product {
+  id: string;
+  image: string;
+  title: string;
+  mg: string;
+  rating: number;
+  price: number;
+  description: string;
+  benefits: string[];
+  usage: string;
+}
+
+export const products: Product[] = [
+  {
+    id: "panchgavya-750",
+    image: panchgavya,
+    title: "Panchgavya",
+    mg: "Mg 750",
+    rating: 4.5,
+    price: 349,
+    description:
+      "Panchgavya is a traditional organic formulation made from five cow-derived products. It acts as a powerful growth promoter and immunity booster for plants, enhancing flowering, fruiting, and overall yield naturally.",
+    benefits: [
+      "Boosts plant immunity against pests and diseases",
+      "Enhances flowering and fruiting",
+      "Improves soil microbial activity",
+      "100% organic and chemical-free",
+    ],
+    usage:
+      "Mix 30ml of Panchgavya in 1 litre of water. Spray on leaves or drench the soil once every 15 days for best results.",
+  },
+  {
+    id: "vermicompost-500",
+    image: vermicompost,
+    title: "Vermicompost",
+    mg: "Mg 500",
+    rating: 4,
+    price: 299,
+    description:
+      "Premium-grade vermicompost made using red wiggler earthworms. This 100% organic soil enhancer is rich in essential nutrients, humic acids, and beneficial microorganisms that boost soil fertility naturally.",
+    benefits: [
+      "Rich in NPK and essential micronutrients",
+      "Improves soil structure and water retention",
+      "Promotes healthy root development",
+      "Safe for all plant types",
+    ],
+    usage:
+      "Mix 200g of vermicompost per pot or 1kg per square meter of garden bed. Apply once a month during the growing season.",
+  },
+  {
+    id: "vermiwash-1000",
+    image: vermiwash,
+    title: "Vermiwash",
+    mg: "Mg 1000",
+    rating: 3.5,
+    price: 199,
+    description:
+      "Vermiwash is a liquid bio-fertilizer collected from vermicomposting units. It contains plant growth hormones, enzymes, and nutrients that promote vigorous plant growth and act as a natural pest repellent.",
+    benefits: [
+      "Natural liquid fertilizer and pest repellent",
+      "Contains growth hormones and enzymes",
+      "Eco-friendly and sustainable",
+      "Suitable for foliar and soil application",
+    ],
+    usage:
+      "Dilute 100ml of Vermiwash in 1 litre of water. Use as a foliar spray or soil drench every 10-15 days.",
+  },
+  {
+    id: "panchgavya-2000",
+    image: panchgavya,
+    title: "Panchgavya",
+    mg: "Mg 2000",
+    rating: 5,
+    price: 599,
+    description:
+      "Our premium large-pack Panchgavya — the same traditional organic formulation in a bigger size for serious gardeners. Ideal for large gardens, farms, and community green spaces.",
+    benefits: [
+      "Best value for large-scale gardening",
+      "All benefits of regular Panchgavya",
+      "Ideal for farms and community gardens",
+      "Long shelf life when stored properly",
+    ],
+    usage:
+      "Mix 30ml of Panchgavya in 1 litre of water. Spray on leaves or drench the soil once every 15 days.",
+  },
+  {
+    id: "panchgavya-750-b",
+    image: panchgavya,
+    title: "Panchgavya",
+    mg: "Mg 750",
+    rating: 4.5,
+    price: 349,
+    description:
+      "Panchgavya is a traditional organic formulation made from five cow-derived products. It acts as a powerful growth promoter and immunity booster for plants.",
+    benefits: [
+      "Boosts plant immunity",
+      "Enhances flowering and fruiting",
+      "Improves soil microbial activity",
+      "100% organic",
+    ],
+    usage:
+      "Mix 30ml in 1 litre of water. Spray on leaves every 15 days.",
+  },
+  {
+    id: "vermicompost-500-b",
+    image: vermicompost,
+    title: "Vermicompost",
+    mg: "Mg 500",
+    rating: 4,
+    price: 299,
+    description:
+      "Premium-grade vermicompost made using red wiggler earthworms. Rich in essential nutrients for healthy plant growth.",
+    benefits: [
+      "Rich in NPK",
+      "Improves soil structure",
+      "Promotes root development",
+      "Safe for all plants",
+    ],
+    usage:
+      "Mix 200g per pot or 1kg per square meter. Apply monthly.",
+  },
+  {
+    id: "vermiwash-1000-b",
+    image: vermiwash,
+    title: "Vermiwash",
+    mg: "Mg 1000",
+    rating: 3.5,
+    price: 199,
+    description:
+      "Liquid bio-fertilizer from vermicomposting units with natural growth hormones and pest-repellent properties.",
+    benefits: [
+      "Natural pest repellent",
+      "Contains growth hormones",
+      "Eco-friendly",
+      "Foliar and soil application",
+    ],
+    usage:
+      "Dilute 100ml in 1 litre of water. Apply every 10-15 days.",
+  },
+  {
+    id: "panchgavya-2000-b",
+    image: panchgavya,
+    title: "Panchgavya",
+    mg: "Mg 2000",
+    rating: 5,
+    price: 599,
+    description:
+      "Premium large-pack Panchgavya for serious gardeners and farms.",
+    benefits: [
+      "Best value pack",
+      "For large-scale use",
+      "Long shelf life",
+      "100% organic",
+    ],
+    usage:
+      "Mix 30ml in 1 litre of water. Spray every 15 days.",
+  },
+];
