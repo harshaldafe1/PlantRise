@@ -1,63 +1,92 @@
-# Features
+# PlantRise - Organic Gardening Products
 
-## Core Features
+A modern React e-commerce website for organic gardening products built with Vite and JavaScript.
 
-- **Product Catalog**: Browse organic gardening products including Panchgavya, Vermicompost, and Vermiwash
-- **Product Details**: View detailed information about each product including benefits, usage instructions, and pricing
-- **Hero Carousel**: Dynamic image carousel on the homepage showcasing featured content
-- **Responsive Design**: Mobile-first responsive layout that works across all devices
+## Features
 
-## Pages
+- Product catalog with detailed product pages
+- Responsive design with Tailwind CSS
+- Smooth animations with Framer Motion
+- Modern UI components with Radix UI
+- Contact form and FAQ section
+- About page with team information
 
-- **Home**: Landing page with hero carousel and product grid
-- **About**: Company information, mission statement, team members, and story
-- **Contact**: Contact form with email, phone, and address information
-- **FAQs**: Frequently asked questions page
-- **Product Details**: Individual product pages with comprehensive information
-- **Login**: User authentication page
-- **Dashboard**: Protected user dashboard (requires authentication)
-- **Profile**: User profile management (requires authentication)
-- **404 Not Found**: Custom error page for invalid routes
+## Tech Stack
 
-## Authentication & Security
+- React 18
+- Vite
+- JavaScript (ES6+)
+- Tailwind CSS
+- Radix UI Components
+- Framer Motion
+- React Router DOM
+- Lucide React Icons
 
-- **Firebase Authentication**: User login and registration system
-- **Protected Routes**: Dashboard and Profile pages require authentication
-- **Auth Routes**: Automatic redirect to dashboard if already logged in
-- **Logout Functionality**: Secure user logout
+## Getting Started
 
-## UI Components
+### Prerequisites
 
-- **shadcn/ui Components**: Full suite of accessible UI components including:
-  - Accordion, Alert Dialog, Avatar, Badge, Breadcrumb
-  - Button, Calendar, Card, Carousel, Chart
-  - Checkbox, Dialog, Dropdown Menu, Form, Input
-  - Navigation Menu, Popover, Select, Tabs, Toast
-  - Tooltip, and many more
-- **Toast Notifications**: User feedback for form submissions and actions
-- **Framer Motion Animations**: Smooth page transitions and animations
+- Node.js (v16 or higher)
+- npm or yarn
 
-## Technical Features
+### Installation
 
-- **React 18**: Modern React with hooks and functional components
-- **TypeScript**: Full type safety throughout the application
-- **React Router**: Client-side routing with protected routes
-- **TanStack Query**: Data fetching and state management
-- **Tailwind CSS**: Utility-first CSS framework
-- **Vite**: Fast build tool and development server
-- **Vitest**: Unit testing framework
-- **ESLint**: Code linting and quality checks
-- **Supabase Integration**: Backend database support (configured)
+1. Clone the repository
+2. Install dependencies:
 
-## Product Management
+```bash
+npm install
+```
 
-- **Product Data Structure**: Organized product information with images, descriptions, benefits, and usage
-- **Product Cards**: Reusable product card components with ratings and pricing
-- **Product Images**: High-quality product images stored in assets
+### Development
 
-## Layout & Navigation
+Run the development server:
 
-- **Consistent Layout**: Shared layout component across all pages
-- **Navigation Bar**: Responsive navigation with active link highlighting
-- **Footer**: Site-wide footer component
-- **Mobile Navigation**: Mobile-friendly navigation menu
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:8080`
+
+### Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+### Preview
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── assets/          # Images and static assets
+├── components/      # React components
+│   ├── ui/         # Reusable UI components
+│   └── ...         # Page-specific components
+├── data/           # Static data (products)
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions
+├── pages/          # Page components
+└── main.jsx        # Application entry point
+```
+
+## Available Pages
+
+- `/` - Home page with product catalog
+- `/about` - About us page
+- `/contact` - Contact form
+- `/faqs` - Frequently asked questions
+- `/product/:id` - Product details page
+
+## License
+
+© 2026 PlantRise. All rights reserved.
