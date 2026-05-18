@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { SignInButton, SignUpButton, UserButton, SignedIn, SignedOut } from "@clerk/clerk-react";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
@@ -46,8 +47,34 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Hamburger */}
+        {/* Right side: Auth buttons + Hamburger */}
         <div className="flex items-center gap-3">
+          {/* Desktop Auth */}
+          <div className="hidden md:flex items-center gap-3">
+            <SignedOut>
+              <SignInButton mode="modal">
+                <button className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-medium px-5 py-2 hover:bg-primary/90 transition-colors">
+                  Sign In
+                </button>
+              </SignInButton>
+              <SignUpButton mode="modal">
+                <button className="inline-flex items-center justify-center rounded-md bg-accent text-accent-foreground text-sm font-medium px-5 py-2 hover:brightness-110 transition-all">
+                  Sign Up
+                </button>
+              </SignUpButton>
+            </SignedOut>
+            <SignedIn>
+              <Link
+                to="/profile"
+                className="inline-flex items-center justify-center rounded-md bg-secondary text-secondary-foreground text-sm font-medium px-5 py-2 hover:bg-secondary/80 transition-colors"
+              >
+                My Profile
+              </Link>
+              <UserButton afterSignOutUrl="/" />
+            </SignedIn>
+          </div>
+
+          {/* Hamburger */}
           <button
             className="md:hidden text-foreground"
             onClick={() => setIsOpen(!isOpen)}
@@ -75,6 +102,33 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <li className="flex flex-col gap-2 pt-2 border-t border-border">
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button className="w-full text-left text-base font-medium text-primary hover:text-primary/80 transition-colors">
+                    Sign In
+                  </button>
+                </SignInButton>
+                <SignUpButton mode="modal">
+                  <button className="w-full text-left text-base font-medium text-accent hover:brightness-110 transition-colors">
+                    Sign Up
+                  </button>
+                </SignUpButton>
+              </SignedOut>
+              <SignedIn>
+                <Link
+                  to="/profile"
+                  className="text-base font-medium text-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  My Profile
+                </Link>
+                <div className="flex items-center gap-2 pt-2">
+                  <UserButton afterSignOutUrl="/" />
+                  <span className="text-sm text-muted-foreground">Account Settings</span>
+                </div>
+              </SignedIn>
+            </li>
           </ul>
         </div>
       )}
